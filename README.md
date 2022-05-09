@@ -25,3 +25,4 @@ php artisan ui bootstrap
 
 
 
+https://butlerraines.com/code-stuff/creating-laravel-project-scratch-my-local-machine
