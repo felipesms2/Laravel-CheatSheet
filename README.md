@@ -4,6 +4,11 @@ Some additional features
 
 composer create-project laravel/laravel="5.1.*" myProject
 
+
+<br>
+
+php artisan make:model table --all
+
 #sqlite support
 
 DB_CONNECTION=sqlite
