@@ -33,6 +33,9 @@ php artisan tinker <br>
 User::factory()->count(3)->make() <br>
 User::factory()->times(5)->create(); <br>
 
+
+php artisan make:seeder RoleUserSeeder
+
 user seeder bring model to class: <br>
 
  1 use App\Models\User;
