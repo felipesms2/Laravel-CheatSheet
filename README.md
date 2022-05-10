@@ -30,6 +30,17 @@ https://butlerraines.com/code-stuff/creating-laravel-project-scratch-my-local-ma
 <br>
 Factory
 
+    public function definition()
+    {
+        return [
+            "name" => $this->faker->jobTitle
+        ];
+        
+        // in <Model>factory.php to chose field data from faker
+    }
+    
+    
+
 
 static values for faker in table roles 
 
@@ -41,8 +52,9 @@ use Illuminate\Support\Facades\DB;
                 "name" =>  "Admin"
             ]
             );
-            
+           
            next value only change name
+           or use //Role::factory()->times(10)->create(); to create random values
 
 */
 
@@ -51,7 +63,7 @@ User::factory()->count(3)->make() <br>
 User::factory()->times(5)->create(); <br>
 
 
-php artisan make:seeder RoleUserSeeder
+php artisan make:seeder RoleUserSeeder // Execute only one especified in databaseSeeder
 
 user seeder bring model to class: <br>
 
