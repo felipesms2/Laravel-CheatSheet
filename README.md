@@ -29,6 +29,23 @@ https://butlerraines.com/code-stuff/creating-laravel-project-scratch-my-local-ma
 
 <br>
 Factory
+
+
+static values for faker in table roles 
+
+/*
+
+use Illuminate\Support\Facades\DB;
+        DB::table('roles')->insert(
+            [
+                "name" =>  "Admin"
+            ]
+            );
+            
+           next value only change name
+
+*/
+
 php artisan tinker <br>
 User::factory()->count(3)->make() <br>
 User::factory()->times(5)->create(); <br>
@@ -46,6 +63,7 @@ user seeder bring model to class: <br>
         $this->call(RoleSeeder::class);
         php artisan db:seed --class=RoleSeeder /*Call individually* / 
         php artisan migrate:refresh --seed /*Reset and migrate*/
+   
         //run php artisan db:seed
         
 
