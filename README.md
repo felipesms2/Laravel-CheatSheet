@@ -36,6 +36,10 @@ User::factory()->times(5)->create(); <br>
 user seeder bring model to class: <br>
 
  1 use App\Models\User;
- 2 put method create factory on run method
+ 2 put method create factory on run method <br>
+ 
+        /Inside databaseseeder to run individually
+        $this->call(UserSeeder::class);
+        $this->call(RoleSeeder::class);
 
 
