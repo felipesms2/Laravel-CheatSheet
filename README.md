@@ -31,4 +31,8 @@ https://butlerraines.com/code-stuff/creating-laravel-project-scratch-my-local-ma
 Factory
 php artisan tinker <br>
 User::factory()->count(3)->make() <br>
-User::factory()->times(5)->create();
+User::factory()->times(5)->create(); <br>
+
+user seeder bring model to class: <br>
+
+use App\Models\User;
