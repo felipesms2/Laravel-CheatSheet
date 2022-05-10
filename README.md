@@ -63,7 +63,7 @@ User::factory()->count(3)->make() <br>
 User::factory()->times(5)->create(); <br>
 
 
-php artisan make:seeder RoleUserSeeder // Execute only one especified in databaseSeeder
+php artisan make:seeder RoleUserSeeder //Creating a new seeder
 
 user seeder bring model to class: <br>
 
