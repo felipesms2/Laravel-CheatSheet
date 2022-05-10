@@ -30,4 +30,5 @@ https://butlerraines.com/code-stuff/creating-laravel-project-scratch-my-local-ma
 <br>
 Factory
 php artisan tinker <br>
-User::factory()->count(3)->make()
+User::factory()->count(3)->make() <br>
+User::factory()->times(5)->create();
