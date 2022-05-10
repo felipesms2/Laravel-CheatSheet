@@ -35,4 +35,7 @@ User::factory()->times(5)->create(); <br>
 
 user seeder bring model to class: <br>
 
-use App\Models\User;
+ 1 use App\Models\User;
+ 2 put method create factory on run method
+
+
