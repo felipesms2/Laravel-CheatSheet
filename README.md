@@ -79,5 +79,7 @@ user seeder bring model to class: <br>
         //run php artisan db:seed
         
  https://www.youtube.com/watch?v=vbgcpuEErhY&list=PLxFwlLOncxFLxT3ZxYPw7-hCrXhdZHg1W&index=5
+ 
+ php artisan make:controller Admin\\UserController -r
         
 
