@@ -79,7 +79,45 @@ user seeder bring model to class: <br>
         //run php artisan db:seed
         
  https://www.youtube.com/watch?v=vbgcpuEErhY&list=PLxFwlLOncxFLxT3ZxYPw7-hCrXhdZHg1W&index=5
- 
+
+# to make controller subfolder 
+
  php artisan make:controller Admin\\UserController -r
-        
+index function
+     public function index()
+    {
+        dd('test');
+    }
+
+After put namespace on web.php routes 
+    use App\Http\Controllers\Admin\UserController;
+Then call the route
+
+    Route::resource('/admin/users', UserController::class); 
+
+# Grouping and prefixing a route name
+
+Route::prefix('admin')->name('admin.')->group(function(){
+    Route::resource('/users', UserController::class);
+});
+
+# Pagination 
+
+Change return view('admin.users.index', ["users"=> User::all()]); to 
+
+return view('admin.users.index', ["users"=> User::paginate(10)]);
+
+on table view, above </table> (end tag)
+{{$users->links()}}
+
+AppServiceProvider.php to styling
+
+add namespace 
+    use Illuminate\Pagination\Paginator;
+
+    public function boot()
+    {
+        Paginator::useBootstrap();
+    }
+
 
