@@ -24,6 +24,8 @@ composer require laravel/ui
 php artisan ui bootstrap
 
 
+https://stackoverflow.com/questions/63807930/target-class-controller-does-not-exist-laravel-8
+To call a view inside index class controller
 
 https://butlerraines.com/code-stuff/creating-laravel-project-scratch-my-local-machine
 
