@@ -4,14 +4,15 @@ Some additional features
 
 composer create-project laravel/laravel="5.1.*" myProject
 
-
 <br>
 
+
 php artisan make:model table --all
-
+<br>
 #sqlite support
+<br>
+DB_CONNECTION=sqlite<br>
 
-DB_CONNECTION=sqlite
 DB_DATABASE=/absolute/path/to/database.sqlite
 
 
