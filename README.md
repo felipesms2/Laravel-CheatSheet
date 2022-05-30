@@ -122,5 +122,7 @@ add namespace
     {
         Paginator::useBootstrap();
     }
+https://stackoverflow.com/questions/63807930/target-class-controller-does-not-exist-laravel-8
+
 
 
