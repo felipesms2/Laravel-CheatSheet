@@ -124,5 +124,20 @@ add namespace
     }
 https://stackoverflow.com/questions/63807930/target-class-controller-does-not-exist-laravel-8
 
+php artisan make:request StoreUserRequest  to create a new validate in a separated file
+
+# Gate
+        File >> app/Providers/AuthServiceProvider.php;
+
+            $this->registerPolicies();  
+        Gate::define('logged-in', function($user){
+            return $user;
+        });
+
+        Index Method Controller >> 
+          if (Gate::denies('logged-in')) {
+             dd('Access Denied');
+        }
+
 
 
