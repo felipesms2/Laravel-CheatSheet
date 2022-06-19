@@ -6,6 +6,12 @@ composer create-project laravel/laravel="5.1.*" myProject
 
 <br>
 
+# ShortCurt
+<br>
+
+sudo wget https://raw.githubusercontent.com/felipesms2/Laravel-CheatSheet/main/cli-shortcurt -P /usr/bin 
+&& sudo mv /usr/bin/cli-shortcurt /usr/bin/lv
+&& sudo chmod +x /usr/bin/lv
 
 php artisan make:model table --all
 <br>
