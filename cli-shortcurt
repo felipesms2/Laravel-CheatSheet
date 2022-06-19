@@ -1,0 +1,3 @@
+echo "Project name: "
+read n	
+composer create-project laravel/laravel ${n} && cd ${n} && composer require doctrine/dbal && touch database/database.sqlite
