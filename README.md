@@ -149,4 +149,6 @@ php artisan make:request StoreUserRequest  to create a new validate in a separat
         }
 
 
+# Must Veriy email
 
+https://larainfo.com/blogs/laravel-8-email-verification-with-laravel-ui
