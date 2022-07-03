@@ -1,7 +1,9 @@
 echo "Project name: "
 read n	
-composer create-project laravel/laravel ${n} && cd ${n} && composer require doctrine/dbal && touch database/database.sqlite
+composer create-project laravel/laravel ${n}
 cd ${n}
+composer require doctrine/dbal
+touch database/database.sqlite
 
 fullpath=$PWD/database/database.sqlite
 
@@ -12,5 +14,7 @@ echo 'DB_CONNECTION=sqlite' >> .env
 echo "DB_DATABASE=$fullpath" >> .env
 cat .env
 php artisan migrate
+code .
+php artisan serve
 
 #echo realpath $0
