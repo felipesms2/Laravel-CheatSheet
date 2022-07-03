@@ -5,7 +5,7 @@ Some additional features
 composer create-project laravel/laravel="5.1.*" myProject
 
 # Breeze
-composer require laravel/breeze --dev && php artisan breeze:install  && npm install && npm run dev && php artisan migrate
+composer require laravel/breeze --dev && php artisan breeze:install  && npm install && npm run build && php artisan migrate
 
 <br>
 
