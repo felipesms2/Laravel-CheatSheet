@@ -75,6 +75,8 @@ User::factory()->count(3)->make() <br>
 User::factory()->times(5)->create(); <br>
 App\Models\User::factory()->count(1)->create()<br>
 App\Models\Secret::factory()->create(['user_id' => 2]) /*Here is to override some hardcoded*/ <br>;
+User::with('secrets')->get(); <br>
+
 
 
 php artisan make:seeder RoleUserSeeder //Creating a new seeder
