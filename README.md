@@ -156,3 +156,11 @@ php artisan make:request StoreUserRequest  to create a new validate in a separat
 # Must Veriy email
 
 https://larainfo.com/blogs/laravel-8-email-verification-with-laravel-ui
+
+# Route api prefix
+
+Route::group(['prefix' =>"v1", 'namespace' => 'App\Http\Controllers\Api\V1'], function()
+{
+    Route::apiResource('customers', CustomerController::class);
+    Route::apiResource('invoices', InvoiceController::class);
+});
