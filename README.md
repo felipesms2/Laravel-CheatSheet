@@ -164,3 +164,10 @@ Route::group(['prefix' =>"v1", 'namespace' => 'App\Http\Controllers\Api\V1'], fu
     Route::apiResource('customers', CustomerController::class);
     Route::apiResource('invoices', InvoiceController::class);
 });
+
+
+# Migrations and changes in schema
+
+$table->string('name', 100)->change(); // to change the column data <br>
+php artisan make:migration add_name_field_table_name --table=users  #make migration change
+$table->dropColumn('image'); // drop some column on function down
