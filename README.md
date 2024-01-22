@@ -181,3 +181,7 @@ $table->foreign('user_id')
 ->references('id')
 ->on('users')
 ->onDelete('cascade');
+
+# Function Controller from Tinker
+
+$controller = app('App\Http\Controllers\MyController');
