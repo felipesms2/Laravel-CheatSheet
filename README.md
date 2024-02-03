@@ -1,4 +1,4 @@
-# Laravel-CheatSheet
+    # Laravel-CheatSheet
 Some additional features
 # choose version
 
@@ -185,3 +185,37 @@ $table->foreign('user_id')
 # Function Controller from Tinker
 
 $controller = app('App\Http\Controllers\MyController');
+
+#changes to existing database
+
+	#create migrations
+		php artisan make:migration add_columns_to_users_table --table=users
+	#add column
+		$table->string('username', 50)->nullable()->after('email');
+		$table->boolean('have_skill')->default(null)->after('username');
+
+# Database Seeder
+
+
+php artisan make:seeder UserSeeder
+
+1 put model into seeder in user case for example
+
+php artisan make:seeder UserSeeder
+
+2 in run function call the factory
+	#Option 1
+	User::factory()->times(10)->create();
+	
+	#Option 2
+	
+
+3 In database seeder post the seeders which have to call during db--seed;
+	#Call Seeder into database without run migrate
+	php artisan db:seed
+
+	#Migrate with seed
+
+	php artisan migrate:refresh --seed
+
+	
