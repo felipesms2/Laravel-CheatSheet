@@ -1,4 +1,4 @@
-	    # Laravel-CheatSheet
+# Laravel-CheatSheet
 	Some additional features
 	# choose version
 
@@ -216,3 +216,22 @@
 			php artisan migrate:refresh --seed
 	4 Call Seeder individually by artisan tinker
 		$seeder = new SkillSeeder(); $seeder->run();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
