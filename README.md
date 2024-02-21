@@ -217,6 +217,10 @@
 	4 Call Seeder individually by artisan tinker
 		$seeder = new SkillSeeder(); $seeder->run();
 
+  # Vscode as default editor
+
+  IGNITION_EDITOR="vscode"
+
 
 
 
