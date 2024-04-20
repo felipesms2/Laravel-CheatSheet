@@ -223,7 +223,9 @@
 
 
 
+# CI/CD Article
 
+https://redberry.international/creating-ci-cd-pipeline-for-laravel-project/
 
 
 
