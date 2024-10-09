@@ -193,6 +193,11 @@ Create and manage migrations:
 php artisan make:migration add_name_field_table_name --table=users
 ```
 
+## Call a function controller inside tinker shell
+```
+app(ArticleController::class)->test()
+```
+
 Update schema:
 ```php
 ->string('name', 100)->change();
