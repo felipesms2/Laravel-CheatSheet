@@ -219,3 +219,12 @@ IGNITION_EDITOR="vscode"
 
 ## CI/CD Article
 Refer to this [CI/CD pipeline article for Laravel](https://redberry.international/creating-ci-cd-pipeline-for-laravel-project/).
+
+# Queue Handle
+
+reschecule job failed:
+```php
+php artisan queue:failed # show failed jobs
+php artisan queue:retry all # retry all failed jobs
+```
+
