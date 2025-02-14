@@ -228,3 +228,7 @@ php artisan queue:failed # show failed jobs
 php artisan queue:retry all # retry all failed jobs
 ```
 
+# Disable CSRF Laravel 11
+
+https://medium.com/@agitari65/disabling-csrf-protection-in-laravel-11-a-step-by-step-guide-8b41216ee571
+
