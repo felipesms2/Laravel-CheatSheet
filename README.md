@@ -6,6 +6,14 @@ Create a new Laravel project with a specific version:
 composer create-project laravel/laravel="5.1.*" myProject
 ```
 
+## Create via docker container
+
+```bash
+docker run --rm -v "$(pwd):/app" -w /app felipesms/liga:1.0 bash -c "composer create-project laravel/laravel folder && mv folder/* folder/.* /app 2>/dev/null || true && rmdir folder && chmod -R 777 /app"
+```
+
+
+
 ## Install Laravel Breeze
 For a simple authentication setup:
 ```bash
