@@ -240,3 +240,8 @@ php artisan queue:retry all # retry all failed jobs
 
 https://medium.com/@agitari65/disabling-csrf-protection-in-laravel-11-a-step-by-step-guide-8b41216ee571
 
+## Traits
+
+```shell
+php artisan make:trait MyTrait
+```
